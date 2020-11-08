@@ -1,0 +1,15 @@
+.practice {
+    padding: 15px;
+}
+
+.practice:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.practice:nth-child(odd) {
+    background-color: lightblue;
+}
+
+p {
+    font-size: larger;
+}
