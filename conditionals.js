@@ -1,8 +1,15 @@
 $(document).ready(function () {
     // add the functions as event listeners
     // to the forms in the HTML
+    $("#clickForm").submit(countClick);
+    $("#ageForm").submit(checkAge);
+    $("#taxForm").submit(calcSalesTax);
+    $("#catForm").submit(recommendFood);
+    $("#cardForm").submit(drawCard);
 
-	function countClick() {
+	function countClick(event) {
+	    event.preventDefault();
+
 		// Increment a variable that tracks the
 		// number of button clicks
 
@@ -16,7 +23,9 @@ $(document).ready(function () {
 	}
 
 
-    function checkAge() {
+    function checkAge(event) {
+        event.preventDefault();
+
         // Get the user's birth year from the text
         // box with ID of "birthYear"
 
@@ -27,7 +36,9 @@ $(document).ready(function () {
 
     }
 
-    function calcSalesTax() {
+    function calcSalesTax(event) {
+        event.preventDefault();
+
         // Get the purchase amount from the text
         // box with ID of "purchaseAmount"
 
@@ -44,7 +55,9 @@ $(document).ready(function () {
 
     }
 
-    function recommendFood() {
+    function recommendFood(event) {
+        event.preventDefault();
+
         // Get the cat's age from the text box with
         // ID of "catAge"
 
@@ -57,7 +70,9 @@ $(document).ready(function () {
 
     }
 
-    function drawCard() {
+    function drawCard(event) {
+        event.preventDefault();
+
         // Generate a random card face value (1 - 13)
         var faceValue = Math.floor(Math.random() * 13) + 1;
 
