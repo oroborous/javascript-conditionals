@@ -74,14 +74,14 @@ $(document).ready(function () {
         event.preventDefault();
 
         // Generate a random card face value (1 - 13)
-        var faceValue = Math.floor(Math.random() * 13) + 1;
+        let faceValue = Math.floor(Math.random() * 13) + 1;
 
         // Generate a random suit (1 - 4)
-        var suit = Math.floor(Math.random() * 4) + 1;
+        let suit = Math.floor(Math.random() * 4) + 1;
 
         // Create the description of the card, for example
         // "King of Spades" or "2 of Hearts"
-        var description;
+        let description;
 
         // For face values 2 - 10, you can just print the number
         // Face value 1 is "Ace", 11 is "Jack", 12 is "Queen",
