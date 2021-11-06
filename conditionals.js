@@ -79,11 +79,6 @@ function drawCard(event) {
     // Generate a random suit (1 - 4)
     let suit = Math.floor(Math.random() * 4) + 1;
 
-    // Declare a variable to hold the description
-    // of the card, for example "King of Spades"
-    // or "2 of Hearts"
-    let description;
-
     // For face values 2 - 10, you can just print the number.
     // Face value 1 is "Ace", 11 is "Jack", 12 is "Queen",
     // and 13 is "King"
